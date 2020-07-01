@@ -17,6 +17,75 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="css/style.css" media="all" />
     <!--[if IE]><link rel="stylesheet" href="css/ie.css" media="all" /><![endif]-->
+    <style type="text/css">
+        table {
+
+            border-collapse: collapse;
+
+            font-family: Futura, Arial, sans-serif;
+
+        }
+
+        caption {
+
+            font-size: larger;
+
+            margin: 1em auto;
+
+        }
+
+        th,td {
+
+            padding: .65em;
+
+        }
+
+        th {
+
+            background: #555 nonerepeat scroll 0 0;
+
+            /* border: 1px solid #777; */
+
+            color: #fff;
+
+        }
+
+        td {
+
+            /* border: 1px solid #777; */
+
+        }
+
+        tbody tr:nth-child(odd) {
+
+            background: #ccc;
+
+        }
+
+        th:first-child {
+
+            border-radius: 9px 0 0 0;
+
+        }
+
+        th:last-child {
+
+            border-radius: 0 9px 0 0;
+
+        }
+
+        tr:last-child td:first-child {
+
+            border-radius: 0 0 0 9px;
+
+        }
+
+        tr:last-child td:last-child {
+
+            border-radius: 0 0 9px 0;
+
+        }
+    </style>
 </head>
 <body>
 <div class="testing">
@@ -134,10 +203,51 @@
                 <button class="left-btn">&#59229;</button><button class="right-btn">&#59230;</button>
             </aside>
         </header>
-        <div class="content cycle">
-            <div id="flot-example-2" class="graph-area"></div>
-            <div id="flot-example-1" class="graph-area"></div>
-        </div>
+        <div class="content cycle" >
+            <center>
+                <table height="310px" width="1307.6">
+                    <thead>
+                    <tr>
+                        <th style="color: #000000;font-weight: 700;">日期</th>
+                        <th style="color: #000000;font-weight: 700;">日活跃用户数</th>
+                        <th style="color: #000000;font-weight: 700;">日用户在线峰值</th>
+                        <th style="color: #000000;font-weight: 700;">用户平均在线时长</th>
+                        <th style="color: #000000;font-weight: 700;">平均请求处理时间</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2020年6月25日</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1253秒</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2100毫秒</td>
+                    <tr>
+                        <td >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2020年6月26日</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1013秒</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2700毫秒</td>
+                    <tr>
+                        <td >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2020年6月27日</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1095秒</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2500毫秒</td>
+                    <tr>
+                        <td >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2020年6月28日</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1269秒</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2700毫秒</td>
+                    <tr>
+                        <td >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2020年6月29日</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;920秒</td>
+                        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2300毫秒</td>
+                    </tbody>
+                </table>
+            </center>
         </div>
     </section>
     <div class="widget-container">

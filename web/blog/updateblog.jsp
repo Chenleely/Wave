@@ -1,7 +1,6 @@
 v<%@ page import="com.wave.po.Blog" %>
 <%@ page import="java.util.Date" %>
-<%@ page import="com.wave.controller.BlogController" %>
-<%@ page import="com.wave.mapper.BlogMapper" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: Luozhihua
   Date: 2020/6/28
@@ -62,11 +61,6 @@ v<%@ page import="com.wave.po.Blog" %>
 		font-family: '宋体';
 		">
             个人博客</h2>
-        <!--
-            作者：offline
-            时间：2020-06-30
-            描述：返回按钮中将href设置为你要返回的页面即可
-        -->
         <a href="#" style="
 			color:#FFFFFF;
 			font-size: 30px;
@@ -74,11 +68,6 @@ v<%@ page import="com.wave.po.Blog" %>
 			">返回</a>
     </div>
     <div style="background-image:url(../backstage/images/1.png);background-size: 100% 100%;">
-        <!--
-            作者：offline
-            时间：2020-06-29
-            描述：每个按钮的action按照你写的代码改，我这里直接复制的你原来的值
-        -->
         <form action="${pageContext.request.contextPath}/index/updateBlog" method="post">
             <p style="font-size: 25px;font-family: '宋体';color: white;"><%=date%>><br><br>Write somthing below..:<br></p>
             <textarea name="updatecontext" rows="50" cols="100" style="font-weight: 700;font-size: 20px;" ><%=context%></textarea>

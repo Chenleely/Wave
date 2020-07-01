@@ -1,17 +1,14 @@
 package com.wave.controller;
 
-import com.wave.mapper.BlogMapper;
 import com.wave.po.Blog;
 import com.wave.po.User;
 import com.wave.service.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -41,8 +38,8 @@ public class BlogController {
     @RequestMapping("selectUpdateBlog")
     public String selectUpdateBlog(HttpSession session){
        //int id=(Integer) session.getAttribute("updateblogid");//updateid为获取要修改的博客id
-        Blog updateBlog=blogService.selectBlogService(17);
-        session.setAttribute("updateblogid",17);
+        Blog updateBlog=blogService.selectBlogService(16);
+        session.setAttribute("updateblogid",16);
         session.setAttribute("updateblog",updateBlog);//用于获取博客并设置修改页面
         return "redirect:/blog/updateblog.jsp";//跳转到更新后的界面
     }

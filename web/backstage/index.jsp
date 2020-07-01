@@ -21,8 +21,8 @@
 <section>
   <h1><strong>Wave</strong>后台管理</h1>
   <form method="post" action="${pageContext.request.contextPath}/backstage/logincheck">
-    <input type="text" name="username" />
-    <input type="password" name="password" />
+    <input type="text" name="username" placeholder="请输入账号.."/>
+    <input type="password" name="password" placeholder="请输入密码.." />
     <button class="blue" type="submit">登录</button>
   </form>
 </section>
