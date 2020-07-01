@@ -1,5 +1,4 @@
-<%@ page import="com.wave.po.Blog" %>
-<%@ page import="com.wave.service.BlogService" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: Louis296
   Date: 2020/6/27
@@ -53,7 +52,7 @@
             时间：2020-06-30
             描述：返回按钮中将href设置为你要返回的页面即可
         -->
-        <a href="#" style="
+        <a href="${pageContext.request.contextPath }/index/finduserblog" style="
 			color:#FFFFFF;
 			font-size: 30px;
 			font-family:'宋体';
@@ -72,9 +71,9 @@
             <br>
             <input type="submit" value="提交"  class="button"/>
         </form>
-        <form action="${pageContext.request.contextPath}/index/selectUpdateBlog" method="post">
-            <input type="submit" value="修改" class="button"/>
-        </form>
+<%--        <form action="${pageContext.request.contextPath}/index/selectUpdateBlog" method="post">--%>
+<%--            <input type="submit" value="修改" class="button"/>--%>
+<%--        </form>--%>
         <a href="#" style="
 			color:rgb(234, 240, 241);
 			font-size: 30px;

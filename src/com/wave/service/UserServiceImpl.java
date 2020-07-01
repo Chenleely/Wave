@@ -6,8 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
-
 @Service("userService")
 @Transactional
 public class UserServiceImpl implements UserService {
@@ -27,6 +25,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public User selectByID(Integer id) {
         return userMapper.selectByID(id);
+    }
+
+    @Override
+    public void deleteUserById(Integer id) {
+        userMapper.deleteUserById(id);
     }
 
 

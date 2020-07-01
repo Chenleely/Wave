@@ -28,7 +28,7 @@
     </header>
     <section class="user">
         <div class="profile-img">
-            <p><img src="images/uiface2.png" alt="" height="40" width="40" />欢迎回来!</p>
+            <p><img src="images/uiface2.png" alt="" height="40" width="40" />管理员，欢迎回来!</p>
         </div>
         <div class="buttons">
             <button class="ico-font">&#9206;</button>
@@ -96,7 +96,7 @@
 		</span>
             <span class="button">直播</span>
             <span class="button">帮助</span>
-            <span class="button blue"><a href="index.html">注销</a></span>
+            <span class="button blue"><a href="index.jsp">注销</a></span>
         </div>
     </section>
 </div>
@@ -130,11 +130,11 @@
     </ul>
 </nav>
 
-<section class="alert">
-    <form method="link" action="page-new.html">
-        <button class="green">创建新页面</button>
-    </form>
-</section>
+<%--<section class="alert">--%>
+<%--    <form method="link" action="page-new.html">--%>
+<%--        <button class="green">创建新页面</button>--%>
+<%--    </form>--%>
+<%--</section>--%>
 <section class="content">
     <form action="${pageContext.request.contextPath}/backstage/selectuser" method="post">
         <input type="submit" value="刷新">
@@ -165,7 +165,8 @@
                     <th class="avatar">姓名</th>
                     <th>邮箱</th>
                     <th>密码</th>
-                    <th>日期</th>
+                    <th>注册日期</th>
+                    <th>注销</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -178,6 +179,7 @@
                     <td><%=user.getUserEmail()%></td>
                     <td><%=user.getUserPassword()%></td>
                     <td><%=user.getUserDate()%></td>
+                    <td><a href="${pageContext.request.contextPath }/backstage/deleteuser?userid=<%=user.getUserID()%>">注销用户</a> </td>
                 </tr>
                 <%
                     }

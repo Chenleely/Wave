@@ -22,4 +22,32 @@ public class SongServiceImpl implements SongService {
         }
         return songMapper.selectSongsByIds(songidlist);
     }
+
+    @Override
+    public List<Song> selectAllSongs() {
+        return songMapper.selectAllSongs();
+    }
+
+    @Override
+    public List<Song> selectSongByWord(String word) {
+        return songMapper.selectSongsByWord(word);
+    }
+
+    @Override
+    public void addSong(Song song) {
+        songMapper.addSong(song);
+    }
+
+    @Override
+    public void deleteSongById(Integer id) {
+        songMapper.deleteSongById(id);
+
+    }
+
+    @Override
+    public Song selectSongByAddress(String address) {
+        return songMapper.selectSongByAddress(address);
+    }
+
+
 }

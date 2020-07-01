@@ -13,4 +13,5 @@ public interface UserMapper {
     public User selectByEmail(String email);
     public User selectByID(Integer id);
     public List<User> selectAllUsers();
+    public void deleteUserById(Integer id);
 }
